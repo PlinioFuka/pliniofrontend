@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 p-3 bg-dark">
+                <div class="row mt-">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn bg-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu dropdown
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Portfolio.html">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="faleconosco.html">Fale conosco</a></li>
+                                <li><a class="dropdown-item" href="#">Item 3</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 p-3 bg-dark text-end">
+                <button class="btn bg-primary" id="notificacaoBtn">Notificações
+                    <span class="badge bg-black border border-light">99+</span>
+                </button>
+                <div class="toast-container position-absolute top-0 end-0 p-3">
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto">Notificação</strong>
+                            <small>Agora</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Você tem um e-mail novo!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="mt-5 p-5"></div>
+            <div class="col">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Elemento pai o Accordion -->
+                            <div class="accordion" id="accordionID">
+                                <!-- Elemento filho Accordion -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="titulo1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#area1" aria-expanded="true" aria-controls="titulo1">
+                                            Experiência Profissional
+                                        </button>
+                                    </h2>
+                                    <div id="area1" class="accordion-collapse collapse" data-bs-parent="#accordionID">
+                                        <div class="accordion-body">
+                                            Em busca da primeira oportunidade profissional.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Elemento filho accordion 2 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="titulo2">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#area2">
+                                            Habilidades
+                                        </button>
+                                    </h2>
+                                    <div id="area2" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionID">
+                                        <div class="accordion-body">
+                                            Comunicação Eficaz – A habilidade de expressar ideias claramente e ouvir ativamente, essencial tanto no trabalho em equipe quanto nas interações com clientes. <br>
+
+                                            Pensamento Crítico – A capacidade de analisar informações de forma objetiva, identificar padrões, e tomar decisões fundamentadas para resolver problemas de maneira eficaz.<br>
+
+                                            Gestão de Tempo – Habilidade de organizar e priorizar tarefas para ser mais produtivo, atendendo prazos e evitando sobrecarga de trabalho.<br>
+
+                                            Adaptabilidade – A capacidade de se ajustar rapidamente a mudanças, aprender novas habilidades e lidar com ambientes dinâmicos e imprevisíveis.<br>
+
+                                            Trabalho em Equipe – Colaborar de maneira eficaz com outros, contribuindo para o sucesso coletivo e utilizando as fortalezas de cada membro do grupo.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Elemento filho accordion 3 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="titulo3">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#area3">
+                                            Formação
+                                        </button>
+                                    </h2>
+                                    <div id="area3" class="accordion-collapse collapse" data-bs-parent="#accordionID">
+                                        <div class="accordion-body">
+                                            2º Ano do Ensino Técnico – ETEC (Escola Técnica Estadual)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary m-3 aling-center bg-success" data-bs-toggle="modal"
+                data-bs-target="#meumodal">
+                    Ver perfil
+                </button>
+                <div class="modal" id="meumodal">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Perfil</h4>
+                        </div>
+                        <img class="card-img-top" src="Foto em 02-12-2024 às 15.42.jpg" alt="">
+                        <h4 class="card-tile mt-3">Plinio Fukazawa</h4>
+                        <p class="card-text">Open to Work!</p>
+                        <div class="modal-footer">
+
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="text-center bg-black py-3 mt-5">
+
+        <div>
+            <button class="btn bg-warning" id="notificacaoBtnn">Contatos
+            </button>
+            <div class="toast-container position-absolute top-0 end-0 p-3">
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">Notificação</strong>
+                        <small>Agora</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Você tem um e-mail novo!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="bootstrap.bundle.js"></script>
+
+    <script>
+        // Inicializar tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Exibir toast ao clicar no botão de notificações
+        document.getElementById('notificacaoBtn').addEventListener('click', function () {
+            var toast = new bootstrap.Toast(document.querySelector('.toast'))
+            toast.show()
+        })
+
+        // Inicializar tooltips
+        var tooltipTriggerListe = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipListe = tooltipTriggerListe.map(function (tooltipTriggerElE) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Exibir toast ao clicar no botão de notificações
+        document.getElementById('notificacaoBtnn').addEventListener('click', function () {
+            var toast = new bootstrap.Toast(document.querySelector('.toast'))
+            toast.show()
+        })
+    </script>
+
+</body>
+
+</html>

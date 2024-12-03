@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>SlideShow</title>
+    <style>
+        .carousel-control-prev,
+        .carousel-control-next{
+            position: absolute;
+            display: inline;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon{
+            background-color: rgba(0, 0, 0, 0,5);
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="conatiner-fluid">
+        <div class="row">
+                <!-- Carrosel de Imagens -->
+                <div id="legal" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Slideshow do Carrossel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pexels-nickcollins-1292998.jpg" alt="Não sei oque e isso" class="d-block w-75 mx-auto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pexels-chevanon-325044.jpg" alt="Peixe muito Beta" class="d-block w-75 mx-auto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pexels-fotios-photos-1161547.jpg" alt="Abacaxi Sigma" class="d-block w-75 mx-auto">
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Icons de botão esquerda direita -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#legal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#legal" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark"></span>
+            </button>
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

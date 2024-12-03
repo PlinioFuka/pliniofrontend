@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 p-3 bg-dark">
+                <a href="#" class="link-light me-4">Link 1</a>
+                <a href="#" class="link-light me-4">Link 2</a>
+                <a href="#" class="link-light me-4">Link 3</a>
+            </div>
+            <div class="col-6 p-3 bg-dark text-end">
+                <button class="btn btn-primary">Notificações</button>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn bg-warning dropdown-toggle" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                            Menu dropdown
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Item 1</a></li>
+                            <li><a class="dropdown-item" href="#">Item 2</a></li>
+                            <li><a class="dropdown-item" href="#">Item 3</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="mt-5 p-5"></div>
+            <div class="col">
+                <button class="btn btn-danger"
+                aria-expanded="false"
+                aria-controls="card1"
+                data-bs-toggle="collapse"
+                data-bs-target=".card1">
+                    Notícia 1 (collapse)
+                </button>
+
+                <div id="card1">
+                    <div class="card card-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ea explicabo minima quae? Obcaecati eos,
+                        repudiandae, in deleniti aliquid odit perferendis fuga sint voluptates molestiae laborum laboriosam vitae facere
+                        ad.
+                        Tempore asperiores id, officiis libero dicta iure quod temporibus rem veniam. Placeat architecto, quas ad
+                        voluptates distinctio eaque doloribus? Aut voluptas, architecto laboriosam ullam tempora corporis doloremque
+                        unde sunt velit?
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                   <!-- <div class="card" style="40px"> -->
+                        <img class="card2 card-img-top" src="fototo.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card2 card-title">Plinio</h4>
+                            <p class="card2 card-text">Desempregado</p>
+                            <a href="#" class="card2 btn btn-success" aria-expanded="false" aria-controls="card2"
+                            data-bs-toggle="collapse" data-bs-target=".card2">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>
